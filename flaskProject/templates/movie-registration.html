@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar Película</title>
+</head>
+<body>
+    <h1>Registrar Película</h1>
+    <form action="" method="post">
+        <div>
+            <label for="nombre">Nombre de la Película:</label>
+            <input type="text" id="nombre" name="nombre" required value="{{ request.form.nombre }}">
+        </div>
+        <div>
+            <label for="genero">Género:</label>
+            <input type="text" id="genero" name="genero" required value="{{ request.form.genero }}">
+        </div>
+        <div>
+            <label for="duracion">Duración (minutos):</label>
+            <input type="number" id="duracion" name="duracion" required value="{{ request.form.duracion }}">
+        </div>
+        <div>
+            <label for="inventario">Inventario:</label>
+            <input type="number" id="inventario" name="inventario" required value="{{ request.form.inventario }}">
+        </div>
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+</html>

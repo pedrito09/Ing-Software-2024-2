@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabla de Rentas</title>
+</head>
+<body>
+    <h1>Tabla de Rentas</h1>
+    <a href="/"> Menú inicio</a>
+    <table border="1">
+        <tr>
+            <th>ID Rentar</th>
+            <th>ID Usuario</th>
+            <th>ID Película</th>
+            <th>Fecha de Renta</th>
+            <th>Días de Renta</th>
+            <th>Estatus</th>
+            <th>Estatus de entrega</th>
+        </tr>
+        {% for renta in rentas %}
+                <td>{{ renta.idRentar }}</td>
+                <td>{{ renta.idUsuario }}</td>
+                <td>{{ renta.idPelicula }}</td>
+                <td>{{ renta.fechaRenta }}</td>
+                <td>{{ renta.diasDeRenta }}</td>
+                <td>{{ renta.estatus }}</td>
+                <td>
+                    {% if renta.estatus == 1 %}
+                        <a href="/rent/estatus/{{ renta.idRentar }}">Marcar como no entregada</a>
+                    {% else %}
+                        <a href="/rent/estatus/{{ renta.idRentar }}">Marcar como entregada</a>
+                    {% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+    <a href="/rent/registrar_renta">Registrar renta</a>
+</body>
+</html>

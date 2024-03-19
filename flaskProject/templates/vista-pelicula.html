@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabla de Películas</title>
+</head>
+<body>
+    <h1>Tabla de peliculas</h1>
+    <a href="/"> Menú inicio</a>
+    <table border="1">
+        <tr>
+            <th>ID Película</th>
+            <th>Nombre</th>
+            <th>Género</th>
+            <th>Duración (minutos)</th>
+            <th>Inventario</th>
+            <th>Eliminar</th>
+            <th>Actualizar</th>
+        </tr>
+        {% for pelicula in peliculas %}
+            <tr>
+                <td>{{ pelicula.idPelicula }}</td>
+                <td>{{ pelicula.nombre }}</td>
+                <td>{{ pelicula.genero }}</td>
+                <td>{{ pelicula.duracion }}</td>
+                <td>{{ pelicula.inventario }}</td>
+                <td>
+                    <a href="/movie/eliminar_pelicula/{{ pelicula.idPelicula }}">Eliminar</a>
+                </td>
+                <td>
+                    <a href="/movie/actualizar_pelicula/{{ pelicula.idPelicula }}">Actualizar</a>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+    <a href="/movie/registrar_pelicula"> Registrar película</a>
+</body>
+</html>

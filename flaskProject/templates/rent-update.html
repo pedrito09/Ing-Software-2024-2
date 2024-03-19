@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Renta</title>
+</head>
+<body>
+    <h1>Solo puedes editar el estatus de la renta. No tienes acceso a los demás campos.</h1>
+    <form action="" method="post">
+        <div>
+            <label for="idUsuario">ID Usuario</label>
+            <input type="text" id="idUsuario" name="idUsuario" value="{{ renta.idUsuario }}" readonly>
+        </div>
+        <div>
+            <label for="idPelicula">ID Película</label>
+            <input type="text" id="idPelicula" name="idPelicula" value="{{ renta.idPelicula }}" readonly>
+        </div>
+        <div>
+            <label for="fechaRenta">Fecha de Renta</label>
+            <input type="date" id="fechaRenta" name="fechaRenta" value="{{ renta.fechaRenta }}" readonly>
+        </div>
+        <div>
+            <label for="estatus">Estatus de Renta</label>
+            <select id="estatus" name="estatus" required>
+                <option value="true" {% if renta.estatus == 1 %}selected{% endif %}>Entregado</option>
+                <option value="false" {% if renta.estatus == 0 %}selected{% endif %}>Sin entregar</option>
+            </select>
+        </div>
+        <input type="submit" value="Editar Estatus de Renta">
+    </form>
+</body>
+</html>

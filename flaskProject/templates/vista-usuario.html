@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabla de Usuarios</title>
+</head>
+<body>
+    <h1>Tabla de Usuarios</h1>
+    <a href="/"> Menú inicio</a>
+    <table border="1">
+        <tr>
+            <th>ID Usuario</th>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Eliminar</th>
+            <th>Actualizar</th>
+        </tr>
+        {% for user in users %}
+            <tr>
+                <td>{{ user.idUsuario }}</td>
+                <td>{{ user.nombre }}</td>
+                <td>{{ user.email}}</td>
+                <td>
+                    <a href="/user/eliminar_usuario/{{ user.idUsuario }}">Eliminar</a>
+                </td>
+                <td>
+                    <a href="/user/actualizar_usuario/{{ user.idUsuario }}">Actualizar</a>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+    <a href="/user/registrar"> Registrar usuario</a>
+
+</body>
+</html>
