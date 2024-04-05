@@ -1,0 +1,34 @@
+.cliente-item {
+    display: flex;
+    flex-direction: column; /* Cambio a disposición de columna */
+    justify-content: center; /* Centrado vertical */
+    align-items: center; /* Centrado horizontal */
+    margin-bottom: 20px;
+    list-style: none;
+    border: 1px solid #ced4da;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.cliente-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrado horizontal */
+}
+
+.Eliminar-button, .Editar-button {
+    background-color: #343a40; /* Fondo gris oscuro */
+    color: #ffffff; /* Texto blanco */
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px; /* Ajuste del margen superior */
+}
+
+.Eliminar-button:hover, .Editar-button:hover {
+    opacity: 0.8;
+}
+
+

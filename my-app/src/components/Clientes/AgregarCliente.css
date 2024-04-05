@@ -1,0 +1,47 @@
+.form-container {
+    max-width: 400px; /* Ancho máximo aumentado */
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffff; /* Fondo blanco */
+    border: 1px solid #ced4da; /* Borde gris */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sutil sombra */
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 16px; /* Ajuste del margen inferior */
+    font-weight: bold;
+    color: #343a40; /* Texto gris oscuro */
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px; /* Ajuste del margen inferior */
+    border: 1px solid #ced4da; /* Borde gris */
+    border-radius: 6px;
+    background-color: #f8f9fa; /* Fondo ligeramente gris */
+    color: #343a40; /* Texto gris oscuro */
+}
+
+.form-input:focus {
+    border-color: #495057; /* Borde gris oscuro al enfocar */
+    outline: none;
+}
+
+.submit-button {
+    padding: 12px 24px;
+    background-color: #343a40; /* Fondo gris oscuro */
+    color: #ffffff; /* Texto blanco */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #495057; /* Color de fondo más oscuro al pasar el mouse */
+}
+
+
+

@@ -1,0 +1,17 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #343a40; /* Texto gris oscuro */
+    box-shadow: 0 0 20px rgba(52, 58, 64, 0.1); /* Sutil sombra */
+}
+
+.title {
+    font-size: 32px; /* Tamaño de fuente aumentado */
+    font-weight: bold;
+    margin-bottom: 20px; /* Ajuste del margen inferior */
+    text-align: center;
+    color: #343a40; /* Texto gris oscuro */
+}
+

@@ -1,0 +1,39 @@
+.form-container {
+    max-width: 400px; /* Ancho máximo aumentado */
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(52, 58, 64, 0.1); /* Sutil sombra */
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 16px; /* Ajuste del margen inferior */
+    font-weight: bold;
+    color: #343a40; /* Texto gris oscuro */
+}
+
+.form-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px; /* Ajuste del margen inferior */
+    border: 1px solid #ced4da; /* Borde gris */
+    border-radius: 6px;
+    background-color: #f8f9fa; /* Fondo ligeramente gris */
+    color: #343a40; /* Texto gris oscuro */
+}
+
+.form-container button {
+    padding: 12px 24px;
+    background-color: #343a40; /* Fondo gris oscuro */
+    color: #ffffff; /* Texto blanco */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #495057; /* Color de fondo más oscuro al pasar el mouse */
+}
+

@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; 
+  color: #343a40; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+h1 {
+  text-align: center;
+  margin-top: 40px; 
+  font-size: 28px; 
+}
+
+.content {
+  padding: 20px; 
+  margin: 40px auto; 
+  max-width: 800px; 
+  background-color: #ffffff; 
+  color: #343a40; 
+  border-radius: 10px; 
+  box-shadow: 0 0 20px rgba(52, 58, 64, 0.1); 
+}
+

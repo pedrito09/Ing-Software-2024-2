@@ -1,0 +1,33 @@
+.editar-renta {
+  margin-bottom: 20px; /* Ajuste del margen inferior */
+}
+
+.editar-renta label {
+  display: block;
+  margin-bottom: 10px; /* Ajuste del margen inferior */
+  font-weight: bold;
+  color: #343a40; /* Texto gris oscuro */
+}
+
+.editar-renta select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ced4da; /* Borde gris */
+  border-radius: 4px;
+}
+
+.editar-renta button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #343a40; /* Fondo gris oscuro */
+  color: #ffffff; /* Texto blanco */
+  cursor: pointer;
+}
+
+.editar-renta button:hover {
+  background-color: #495057; /* Color de fondo más oscuro al pasar el mouse */
+}
+
